@@ -1,5 +1,5 @@
-// const audio = document.getElementById("audioplay").scr;
-// audio.loop = false;
+const audio = new Audio ('https://www.melodyloops.com/tracks/formula-for-success/');
+audio.loop = true;
 //storing the date object of alarm that the user set
 let alarmTime = null;
 //storing the reference to store alarm so that we can clear the alarm when needed
@@ -14,9 +14,10 @@ timer.innerText = new Date().toLocaleTimeString()
 //Saving the date and the time provided by the user
 function setAlarmTime(value) {
     alarmTime = value;
-    // console.log(alarmTime); 
+    console.log(alarmTime); 
 }
 
+//Setting the alarm
 function setAlarm () {
     if (alarmTime) {
         const current = new Date();
@@ -30,11 +31,12 @@ function setAlarm () {
     }
 }
 
+//To clear the alarm and to pause the alarm sound
 function clearAlarm () {
     audio.pause();
     if (alarmTimeout) {
         clearTimeout (alarmTimeout);
-        alert('Alarm Cleared');
+        alert('Alarm Cleared'); 
     }
 }
 
