@@ -21,15 +21,14 @@ html,body {
 
 .clock {
     font-family: 'Orbitron', sans-serif;
-    font-size: 15vw;
-    background-image:linear-gradient( to bottom right,
+    font-size: 10vw;
+    color: #ddfd4b;
+    margin: 5rem;
+    color:linear-gradient( to bottom right,
     rgba(63,81,181,1) 0%, 
     rgba(171,71,188 ,1) 70%);
-	box-shadow: 1px 1px 30px rgba(81,45,168 ,1);
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+	
+    
 }
 
 input {

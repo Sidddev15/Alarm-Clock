@@ -10,12 +10,13 @@
 <body> 
     <div class="container">
         <div class="clock"></div>
-        <input name="alarmTime" type="datetime-local">
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
         <div class="controls">
-            <button class="button set-alarm">Set Alarm</button>
-            <button class="button clear-alarm">Clear Alarm</button>
+            <button onclick="setAlarm()" class="button set-alarm">Set Alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Clear Alarm</button>
         </div>
     </div>
+    <!-- <audio src="./Music/sleepy-cat-118974.mp3" id="audioplay" hidden></audio> -->
     <script src="index.js"></script>
 </body>
 </html>
